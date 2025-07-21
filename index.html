@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather & Tourism Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌤️ Modern Header -->
+  <header class="site-header">
+    <h1>Weather & Travel Companion</h1>
+    <nav class="nav-links">
+      <input type="text" id="cityInput" placeholder="Enter City (e.g., Jaipur)" />
+      <button onclick="loadData()">Search</button>
+      <button id="currentLocationBtn">📍 My Location</button>
+      <button id="darkModeToggle">🌙 Toggle Mode</button>
+    </nav>
+    <div id="dateTime" style="margin-top: 10px; font-weight: bold;"></div>
+  </header>
+
+  <!-- ⭐ Favorites Section -->
+  <section id="favoritesSection">
+    <h3>Favorite Locations</h3>
+    <ul id="favoritesList"></ul>
+    <button id="saveFavoriteBtn">⭐ Save Current Location</button>
+  </section>
+
+  <!-- 🌦️ Weather Info -->
+  <section id="weather"></section>
+
+  <!-- ⛅ Alerts -->
+  <section id="alerts"></section>
+
+  <!-- 🌫️ Air Quality -->
+  <section id="airQuality"></section>
+
+  <!-- 🕒 Hourly Forecast -->
+  <section id="hourlyForecast"></section>
+
+  <!-- 📅 5-Day Forecast -->
+  <section id="forecast"></section>
+
+  <!-- 🗺️ Tourist Places -->
+  <section id="places"></section>
+
+  <!-- 🗺️ Google Map -->
+  <div id="map"></div>
+
+  <!-- 🌍 Footer -->
+  <footer class="site-footer">
+    <p>Made with ❤️ by Satyam | © 2025</p>
+    <p><a href="https://openweathermap.org/" target="_blank">Powered by OpenWeather API</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_VtLd_W6G2RnIt-f0-PpG2bdy_VGdf14&libraries=places"></script>
+
+</body>
+</html>
